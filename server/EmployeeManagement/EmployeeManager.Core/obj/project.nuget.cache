@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "dQxXuQTtuixBkpbdabA849ulv4FslTiIXQM/Ix5FMOXDmZfcXmakr2yeNQaF/kS0aks1mCYH1S/D4XshC9588w==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\USER\\Desktop\\אסתי עבודה\\ש.ל.ה - כללית\\EmployeeManagement\\EmployeeManager.Core\\EmployeeManager.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\USER\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\7.0.0\\microsoft.extensions.dependencyinjection.abstractions.7.0.0.nupkg.sha512",
+    "C:\\Users\\USER\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}

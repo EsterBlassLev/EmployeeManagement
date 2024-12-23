@@ -1,0 +1,178 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>EmployeeManagement.Application</name>
+    </assembly>
+    <members>
+        <member name="T:EmployeeManagement.Application.Controllers.AuthController">
+            <summary>
+            Web API controller for authentication (manager registration and login).
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Application.Controllers.AuthController.#ctor(EmployeeManager.Core.Interfaces.IManagerService,Microsoft.Extensions.Logging.ILogger{EmployeeManagement.Application.Controllers.AuthController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:EmployeeManagement.Application.Controllers.AuthController"/> class.
+            </summary>
+            <param name="managerService">The manager service.</param>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:EmployeeManagement.Application.Controllers.AuthController.Register(EmployeeManager.Core.DTOs.RegisterManagerDto)">
+            <summary>
+            Registers a new manager.
+            </summary>
+            <param name="dto">The data transfer object containing manager registration details.</param>
+            <returns>An IActionResult containing a token on success or a BadRequest message on failure.</returns>
+        </member>
+        <member name="M:EmployeeManagement.Application.Controllers.AuthController.Login(EmployeeManager.Core.DTOs.LoginDto)">
+            <summary>
+            Logs in a manager.
+            </summary>
+            <param name="dto">The data transfer object containing manager login credentials.</param>
+            <returns>An IActionResult containing a token on success or a BadRequest message on failure.</returns>
+        </member>
+        <member name="T:EmployeeManagement.Application.Controllers.EmployeesController">
+            <summary>
+            Web API controller for managing employees.
+            Requires authorization for all actions.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Application.Controllers.EmployeesController.#ctor(EmployeeManager.Core.Interfaces.IEmployeeService,Microsoft.Extensions.Logging.ILogger{EmployeeManagement.Application.Controllers.EmployeesController})">
+            <summary>
+            Initializes a new instance of the <see cref="T:EmployeeManagement.Application.Controllers.EmployeesController"/> class.
+            </summary>
+            <param name="employeeService">The employee service.</param>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:EmployeeManagement.Application.Controllers.EmployeesController.GetEmployeesByManagerId">
+            <summary>
+            Gets all employees managed by the current user (manager).
+            </summary>
+            <returns>An IActionResult containing a list of employees or an error message.</returns>
+        </member>
+        <member name="M:EmployeeManagement.Application.Controllers.EmployeesController.SearchEmployees(System.String)">
+            <summary>
+            Searches for employees by name, filtered by the current user's managed employees.
+            </summary>
+            <param name="name">The name (or part of the name) to search for.</param>
+            <returns>An IActionResult containing a list of matching employees or an error message.</returns>
+        </member>
+        <member name="M:EmployeeManagement.Application.Controllers.EmployeesController.CreateEmployee(EmployeeManager.Core.DTOs.CreateEmployeeDto)">
+            <summary>
+            Creates a new employee under the current user (manager).
+            </summary>
+            <param name="dto">The data transfer object containing employee creation details.</param>
+            <returns>An IActionResult containing the created employee or an error message.</returns>
+        </member>
+        <member name="M:EmployeeManagement.Application.Controllers.EmployeesController.GetEmployee(System.Int32)">
+            <summary>
+            Gets an employee by ID, filtered by the current user's managed employees.
+            </summary>
+            <param name="id">The ID of the employee to retrieve.</param>
+            <returns>An IActionResult containing the employee data or an error message.</returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:EmployeeManagement.Application.Controllers.EmployeesController.UpdateEmployee(System.Int32,EmployeeManager.Core.DTOs.UpdateEmployeeDto)" -->
+        <member name="M:EmployeeManagement.Application.Controllers.EmployeesController.DeleteEmployee(System.Int32)">
+            <summary>
+            Deletes an employee by ID, filtered by the current user's managed employees.
+            </summary>
+            <param name="id">The ID of the employee to retrieve.</param>
+            <returns>An IActionResult with no content data or an error message.</returns>
+        </member>
+        <member name="M:EmployeeManagement.Application.Controllers.EmployeesController.GetCurrentManagerId">
+            <summary>
+            Gets an ID by current user's managed employees.
+            </summary>
+            <returns>the manager ID data or an error message.</returns>
+        </member>
+        <member name="T:EmployeeManagement.Application.Middleware.ExceptionMiddleware">
+            <summary>
+            Middleware for handling unhandled exceptions in the application.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Application.Middleware.ExceptionMiddleware.#ctor(Microsoft.AspNetCore.Http.RequestDelegate,Microsoft.Extensions.Logging.ILogger{EmployeeManagement.Application.Middleware.ExceptionMiddleware})">
+            <summary>
+            Initializes a new instance of the <see cref="T:EmployeeManagement.Application.Middleware.ExceptionMiddleware"/> class.
+            </summary>
+            <param name="next">The next middleware in the pipeline.</param>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:EmployeeManagement.Application.Middleware.ExceptionMiddleware.InvokeAsync(Microsoft.AspNetCore.Http.HttpContext)">
+            <summary>
+            Invokes the middleware.
+            </summary>
+            <param name="context">The HTTP context.</param>
+            <returns>A task representing the asynchronous operation.</returns>
+        </member>
+        <member name="M:EmployeeManagement.Application.Middleware.ExceptionMiddleware.HandleExceptionAsync(Microsoft.AspNetCore.Http.HttpContext,System.Exception)">
+            <summary>
+            Handles the exception by setting the response status code and writing an error message to the response.
+            </summary>
+            <param name="context">The HTTP context.</param>
+            <param name="exception">The exception that occurred.</param>
+            <returns>A task representing the asynchronous operation.</returns>
+        </member>
+        <member name="T:EmployeeManagement.Application.Services.EmployeeService">
+            <summary>
+            Service class for managing employees.
+            Implements the <see cref="T:EmployeeManager.Core.Interfaces.IEmployeeService"/> interface.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Application.Services.EmployeeService.#ctor(EmployeeManager.Core.Interfaces.IUnitOfWork,EmployeeManager.Core.Interfaces.IAuthService,AutoMapper.IMapper,Microsoft.Extensions.Logging.ILogger{EmployeeManagement.Application.Services.EmployeeService},System.Data.IDbConnection)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EmployeeManagement.Application.Services.EmployeeService"/> class.
+            </summary>
+            <param name="unitOfWork">The unit of work for data access.</param>
+            <param name="authService">The authentication service.</param>
+            <param name="mapper">The AutoMapper instance for mapping objects.</param>
+            <param name="logger">The logger for recording service activity.</param>
+            <param name="connection">The database connection (optional).</param>
+        </member>
+        <member name="M:EmployeeManagement.Application.Services.EmployeeService.CreateEmployee(EmployeeManager.Core.DTOs.CreateEmployeeDto,System.Int32)">
+            <summary>
+            Creates a new employee under the specified manager.
+            </summary>
+            <param name="dto">The data transfer object containing employee creation details.</param>
+            <param name="managerId">The ID of the manager to whom the employee belongs.</param>
+            <returns>An EmployeeDto representing the created employee.</returns>
+            <exception cref="T:EmployeeManager.Core.Exceptions.BadRequestException">Thrown if the email already exists.</exception>
+            <exception cref="T:EmployeeManager.Core.Exceptions.NotFoundException">Thrown if the manager is not found.</exception>
+        </member>
+        <member name="M:EmployeeManagement.Application.Services.EmployeeService.DeleteEmployee(System.Int32,System.Int32)">
+            <summary>
+            Deletes an employee.
+            </summary>
+            <param name="id">The ID of the employee to delete.</param>
+            <param name="managerId">The ID of the manager who is trying to delete the employee.</param>
+            <returns>True if the employee is deleted successfully, false otherwise.</returns>
+            <exception cref="T:EmployeeManager.Core.Exceptions.NotFoundException">Thrown if the employee is not found.</exception>
+            <exception cref="T:EmployeeManager.Core.Exceptions.UnauthorizedException">Thrown if the manager is not authorized to delete the employee.</exception>
+        </member>
+        <member name="T:EmployeeManagement.Application.Services.ManagerService">
+            <summary>
+            Service class for managing managers (registration and login).
+            Implements the <see cref="T:EmployeeManager.Core.Interfaces.IManagerService"/> interface.
+            </summary>
+        </member>
+        <member name="M:EmployeeManagement.Application.Services.ManagerService.#ctor(EmployeeManager.Core.Interfaces.IManagerRepository,EmployeeManager.Core.Interfaces.IAuthService)">
+            <summary>
+            Initializes a new instance of the <see cref="T:EmployeeManagement.Application.Services.ManagerService"/> class.
+            </summary>
+            <param name="managerRepository">The manager repository.</param>
+            <param name="authService">The authentication service.</param>
+        </member>
+        <member name="M:EmployeeManagement.Application.Services.ManagerService.RegisterManager(EmployeeManager.Core.DTOs.RegisterManagerDto)">
+            <summary>
+            Registers a new manager.
+            </summary>
+            <param name="dto">The data transfer object containing manager registration details.</param>
+            <returns>A tuple containing success flag, message, and token on success, or error message on failure.</returns>
+        </member>
+        <member name="M:EmployeeManagement.Application.Services.ManagerService.Login(EmployeeManager.Core.DTOs.LoginDto)">
+            <summary>
+            Logs in a manager.
+            </summary>
+            <param name="dto">The data transfer object containing manager login credentials.</param>
+            <returns>A tuple containing success flag, message, and token on success, or error message on failure.</returns>
+        </member>
+    </members>
+</doc>

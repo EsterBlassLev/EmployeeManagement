@@ -1,0 +1,169 @@
+2024-12-21 20:14:44.155 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/_framework/aspnetcore-browser-refresh.js - -
+2024-12-21 20:14:44.491 +02:00 [DBG] Connection ID "18014398511092596804" disconnecting.
+2024-12-21 20:14:44.498 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 356.9880ms
+2024-12-21 21:00:43.928 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/_framework/aspnetcore-browser-refresh.js - -
+2024-12-21 21:00:44.009 +02:00 [DBG] Connection ID "18158513712053354535" disconnecting.
+2024-12-21 21:00:44.021 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 96.2320ms
+2024-12-21 21:15:21.328 +02:00 [DBG] Hosting starting
+2024-12-21 21:15:22.056 +02:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-21 21:15:22.117 +02:00 [DBG] Reading data from file 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys\key-f8d35c75-3968-4c05-9f6f-e968a9ab0575.xml'.
+2024-12-21 21:15:22.329 +02:00 [DBG] Found key {f8d35c75-3968-4c05-9f6f-e968a9ab0575}.
+2024-12-21 21:15:22.401 +02:00 [DBG] Considering key {f8d35c75-3968-4c05-9f6f-e968a9ab0575} with expiration date 2025-03-19 21:34:20Z as default key.
+2024-12-21 21:15:22.405 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-12-21 21:15:22.409 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-12-21 21:15:22.411 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-12-21 21:15:22.442 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-12-21 21:15:22.450 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-12-21 21:15:22.452 +02:00 [DBG] Using key {f8d35c75-3968-4c05-9f6f-e968a9ab0575} as the default key.
+2024-12-21 21:15:22.453 +02:00 [DBG] Key ring with default key {f8d35c75-3968-4c05-9f6f-e968a9ab0575} was loaded during application startup.
+2024-12-21 21:15:23.853 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-12-21 21:15:26.802 +02:00 [DBG] Entity Framework Core 7.0.20 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.20' with options: None
+2024-12-21 21:15:26.863 +02:00 [DBG] Creating DbConnection.
+2024-12-21 21:15:26.887 +02:00 [DBG] Created DbConnection. (20ms).
+2024-12-21 21:15:26.894 +02:00 [DBG] Opening connection to database 'main' on server 'EmployeeManagement.db'.
+2024-12-21 21:15:26.944 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\USER\Desktop\אסתי עבודה\ש.ל.ה - כללית\EmployeeManagement\EmployeeManagement\EmployeeManagement.db'.
+2024-12-21 21:15:26.956 +02:00 [DBG] Disposing connection to database 'main' on server 'EmployeeManagement.db'.
+2024-12-21 21:15:26.970 +02:00 [DBG] Disposed connection to database 'main' on server 'EmployeeManagement.db' (1ms).
+2024-12-21 21:15:26.978 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-12-21 21:15:26.982 +02:00 [DBG] Creating DbConnection.
+2024-12-21 21:15:26.983 +02:00 [DBG] Created DbConnection. (0ms).
+2024-12-21 21:15:26.999 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (14ms).
+2024-12-21 21:15:27.003 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (26ms).
+2024-12-21 21:15:27.004 +02:00 [DBG] Opening connection to database 'main' on server 'EmployeeManagement.db'.
+2024-12-21 21:15:27.011 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\USER\Desktop\אסתי עבודה\ש.ל.ה - כללית\EmployeeManagement\EmployeeManagement\EmployeeManagement.db'.
+2024-12-21 21:15:27.036 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-12-21 21:15:27.084 +02:00 [INF] Executed DbCommand (58ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-12-21 21:15:27.089 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\USER\Desktop\אסתי עבודה\ש.ל.ה - כללית\EmployeeManagement\EmployeeManagement\EmployeeManagement.db'.
+2024-12-21 21:15:27.097 +02:00 [DBG] Closed connection to database 'main' on server 'EmployeeManagement.db' (6ms).
+2024-12-21 21:15:27.104 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-21 21:15:27.106 +02:00 [DBG] Disposing connection to database 'main' on server 'EmployeeManagement.db'.
+2024-12-21 21:15:27.106 +02:00 [DBG] Disposed connection to database 'main' on server 'EmployeeManagement.db' (0ms).
+2024-12-21 21:15:27.311 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-12-21 21:15:27.547 +02:00 [DBG] Loaded hosting startup assembly EmployeeManagement.Application
+2024-12-21 21:15:27.556 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-12-21 21:15:27.556 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-12-21 21:15:27.557 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-21 21:15:27.557 +02:00 [INF] Hosting environment: Development
+2024-12-21 21:15:27.557 +02:00 [INF] Content root path: C:\Users\USER\Desktop\אסתי עבודה\ש.ל.ה - כללית\EmployeeManagement\EmployeeManagement
+2024-12-21 21:15:27.557 +02:00 [DBG] Hosting started
+2024-12-21 21:15:27.756 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/swagger/index.html - -
+2024-12-21 21:15:27.844 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-12-21 21:15:28.556 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-12-21 21:15:29.258 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-12-21 21:15:29.300 +02:00 [DBG] Connection ID "18158513699168452670" disconnecting.
+2024-12-21 21:15:29.301 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/swagger/index.html - - - 200 - text/html;charset=utf-8 1547.4613ms
+2024-12-21 21:15:29.323 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/_framework/aspnetcore-browser-refresh.js - -
+2024-12-21 21:15:29.325 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/_vs/browserLink - -
+2024-12-21 21:15:29.334 +02:00 [DBG] Connection ID "18302628887244308522" disconnecting.
+2024-12-21 21:15:29.340 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 10.7804ms
+2024-12-21 21:15:29.342 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/swagger/swagger-ui-standalone-preset.js - -
+2024-12-21 21:15:29.374 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/swagger/swagger-ui-bundle.js - -
+2024-12-21 21:15:29.378 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/swagger/swagger-ui.css - -
+2024-12-21 21:15:29.472 +02:00 [INF] Sending file. Request path: '/swagger-ui.css'. Physical path: 'N/A'
+2024-12-21 21:15:29.525 +02:00 [DBG] Connection ID "18158513699168452672" disconnecting.
+2024-12-21 21:15:29.654 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/swagger/swagger-ui.css - - - 200 143943 text/css 275.8152ms
+2024-12-21 21:15:29.659 +02:00 [INF] Sending file. Request path: '/swagger-ui-standalone-preset.js'. Physical path: 'N/A'
+2024-12-21 21:15:29.707 +02:00 [INF] Sending file. Request path: '/swagger-ui-bundle.js'. Physical path: 'N/A'
+2024-12-21 21:15:29.784 +02:00 [DBG] Connection ID "18230571293206380606" disconnecting.
+2024-12-21 21:15:29.801 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/swagger/swagger-ui-standalone-preset.js - - - 200 339486 text/javascript 459.4188ms
+2024-12-21 21:15:30.000 +02:00 [DBG] Connection ID "17942340917054668801" disconnecting.
+2024-12-21 21:15:30.101 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 776.0985ms
+2024-12-21 21:15:30.168 +02:00 [DBG] Connection ID "18014398511092596825" disconnecting.
+2024-12-21 21:15:30.253 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/swagger/swagger-ui-bundle.js - - - 200 1096145 text/javascript 878.5312ms
+2024-12-21 21:15:30.837 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/swagger/v1/swagger.json - -
+2024-12-21 21:15:32.320 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 1482.3116ms
+2024-12-21 21:16:28.275 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/api/auth/register - -
+2024-12-21 21:16:28.331 +02:00 [DBG] The request path  does not match the path filter
+2024-12-21 21:16:28.426 +02:00 [DBG] 1 candidate(s) found for the request path '/api/auth/register'
+2024-12-21 21:16:28.427 +02:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2024-12-21 21:16:28.675 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-21 21:16:28.680 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-12-21 21:16:28.681 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-12-21 21:16:28.685 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/api/auth/register - - - 405 - - 410.0857ms
+2024-12-21 21:16:38.528 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/api/auth/register - -
+2024-12-21 21:16:38.530 +02:00 [DBG] The request path  does not match the path filter
+2024-12-21 21:16:38.541 +02:00 [DBG] 1 candidate(s) found for the request path '/api/auth/register'
+2024-12-21 21:16:38.541 +02:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2024-12-21 21:16:38.544 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-21 21:16:38.546 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-12-21 21:16:38.546 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-12-21 21:16:38.547 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/api/auth/register - - - 405 - - 19.3405ms
+2024-12-21 21:16:40.007 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/api/auth/register - -
+2024-12-21 21:16:40.010 +02:00 [DBG] The request path  does not match the path filter
+2024-12-21 21:16:40.011 +02:00 [DBG] 1 candidate(s) found for the request path '/api/auth/register'
+2024-12-21 21:16:40.011 +02:00 [DBG] Request matched endpoint '405 HTTP Method Not Supported'
+2024-12-21 21:16:40.021 +02:00 [DBG] AuthenticationScheme: Bearer was not authenticated.
+2024-12-21 21:16:40.022 +02:00 [INF] Executing endpoint '405 HTTP Method Not Supported'
+2024-12-21 21:16:40.022 +02:00 [INF] Executed endpoint '405 HTTP Method Not Supported'
+2024-12-21 21:16:40.024 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/api/auth/register - - - 405 - - 16.3556ms
+2024-12-21 22:04:25.326 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/swagger/index.html - -
+2024-12-21 22:04:25.517 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-12-21 22:04:25.714 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-12-21 22:04:25.718 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/swagger/index.html - - - 200 - text/html;charset=utf-8 421.7959ms
+2024-12-21 22:04:25.719 +02:00 [DBG] Connection ID "18086456105130524764" disconnecting.
+2024-12-21 22:04:25.745 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/_vs/browserLink - -
+2024-12-21 22:04:25.812 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/_framework/aspnetcore-browser-refresh.js - -
+2024-12-21 22:04:25.831 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 12.4699ms
+2024-12-21 22:04:26.326 +02:00 [DBG] Connection ID "17942340917054668803" disconnecting.
+2024-12-21 22:04:26.334 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/_vs/browserLink - - - 200 - text/javascript;+charset=UTF-8 586.6284ms
+2024-12-21 22:04:26.501 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/swagger/v1/swagger.json - -
+2024-12-21 22:04:26.937 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 436.2226ms
+2024-12-21 22:20:45.108 +02:00 [DBG] Hosting starting
+2024-12-21 22:20:46.280 +02:00 [INF] User profile is available. Using 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys' as key repository and Windows DPAPI to encrypt keys at rest.
+2024-12-21 22:20:47.165 +02:00 [DBG] Reading data from file 'C:\Users\USER\AppData\Local\ASP.NET\DataProtection-Keys\key-f8d35c75-3968-4c05-9f6f-e968a9ab0575.xml'.
+2024-12-21 22:20:47.483 +02:00 [DBG] Found key {f8d35c75-3968-4c05-9f6f-e968a9ab0575}.
+2024-12-21 22:20:47.554 +02:00 [DBG] Considering key {f8d35c75-3968-4c05-9f6f-e968a9ab0575} with expiration date 2025-03-19 21:34:20Z as default key.
+2024-12-21 22:20:47.565 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.XmlEncryption.DpapiXmlDecryptor, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-12-21 22:20:47.570 +02:00 [DBG] Decrypting secret element using Windows DPAPI.
+2024-12-21 22:20:47.576 +02:00 [DBG] Forwarded activator type request from Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Version=7.0.0.0, Culture=neutral, PublicKeyToken=adb9793829ddae60 to Microsoft.AspNetCore.DataProtection.AuthenticatedEncryption.ConfigurationModel.AuthenticatedEncryptorDescriptorDeserializer, Microsoft.AspNetCore.DataProtection, Culture=neutral, PublicKeyToken=adb9793829ddae60
+2024-12-21 22:20:47.583 +02:00 [DBG] Opening CNG algorithm 'AES' from provider 'null' with chaining mode CBC.
+2024-12-21 22:20:47.603 +02:00 [DBG] Opening CNG algorithm 'SHA256' from provider 'null' with HMAC.
+2024-12-21 22:20:47.607 +02:00 [DBG] Using key {f8d35c75-3968-4c05-9f6f-e968a9ab0575} as the default key.
+2024-12-21 22:20:47.609 +02:00 [DBG] Key ring with default key {f8d35c75-3968-4c05-9f6f-e968a9ab0575} was loaded during application startup.
+2024-12-21 22:20:48.952 +02:00 [DBG] An 'IServiceProvider' was created for internal use by Entity Framework.
+2024-12-21 22:20:56.563 +02:00 [DBG] Entity Framework Core 7.0.20 initialized 'ApplicationDbContext' using provider 'Microsoft.EntityFrameworkCore.Sqlite:7.0.20' with options: None
+2024-12-21 22:20:56.656 +02:00 [DBG] Creating DbConnection.
+2024-12-21 22:20:56.681 +02:00 [DBG] Created DbConnection. (23ms).
+2024-12-21 22:20:56.690 +02:00 [DBG] Opening connection to database 'main' on server 'EmployeeManagement.db'.
+2024-12-21 22:20:56.818 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\USER\Desktop\אסתי עבודה\ש.ל.ה - כללית\EmployeeManagement\EmployeeManagement\EmployeeManagement.db'.
+2024-12-21 22:20:56.857 +02:00 [DBG] Disposing connection to database 'main' on server 'EmployeeManagement.db'.
+2024-12-21 22:20:56.878 +02:00 [DBG] Disposed connection to database 'main' on server 'EmployeeManagement.db' (3ms).
+2024-12-21 22:20:56.889 +02:00 [DBG] Creating DbCommand for 'ExecuteScalar'.
+2024-12-21 22:20:56.890 +02:00 [DBG] Creating DbConnection.
+2024-12-21 22:20:56.891 +02:00 [DBG] Created DbConnection. (0ms).
+2024-12-21 22:20:56.907 +02:00 [DBG] Created DbCommand for 'ExecuteScalar' (14ms).
+2024-12-21 22:20:56.912 +02:00 [DBG] Initialized DbCommand for 'ExecuteScalar' (25ms).
+2024-12-21 22:20:56.913 +02:00 [DBG] Opening connection to database 'main' on server 'EmployeeManagement.db'.
+2024-12-21 22:20:56.934 +02:00 [DBG] Opened connection to database 'main' on server 'C:\Users\USER\Desktop\אסתי עבודה\ש.ל.ה - כללית\EmployeeManagement\EmployeeManagement\EmployeeManagement.db'.
+2024-12-21 22:20:56.969 +02:00 [DBG] Executing DbCommand [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-12-21 22:20:57.220 +02:00 [INF] Executed DbCommand (132ms) [Parameters=[], CommandType='"Text"', CommandTimeout='30']
+SELECT COUNT(*) FROM "sqlite_master" WHERE "type" = 'table' AND "rootpage" IS NOT NULL;
+2024-12-21 22:20:57.225 +02:00 [DBG] Closing connection to database 'main' on server 'C:\Users\USER\Desktop\אסתי עבודה\ש.ל.ה - כללית\EmployeeManagement\EmployeeManagement\EmployeeManagement.db'.
+2024-12-21 22:20:57.230 +02:00 [DBG] Closed connection to database 'main' on server 'EmployeeManagement.db' (4ms).
+2024-12-21 22:20:57.233 +02:00 [DBG] 'ApplicationDbContext' disposed.
+2024-12-21 22:20:57.234 +02:00 [DBG] Disposing connection to database 'main' on server 'EmployeeManagement.db'.
+2024-12-21 22:20:57.235 +02:00 [DBG] Disposed connection to database 'main' on server 'EmployeeManagement.db' (0ms).
+2024-12-21 22:20:57.561 +02:00 [DBG] Registered model binder providers, in the following order: ["Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BinderTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ServicesModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.BodyModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.HeaderModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FloatingPointTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.EnumTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DateTimeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.TryParseModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.SimpleTypeModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CancellationTokenModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ByteArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormFileModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.FormCollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.KeyValuePairModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.DictionaryModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ArrayModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.CollectionModelBinderProvider","Microsoft.AspNetCore.Mvc.ModelBinding.Binders.ComplexObjectModelBinderProvider"]
+2024-12-21 22:20:58.348 +02:00 [DBG] Loaded hosting startup assembly EmployeeManagement.Application
+2024-12-21 22:20:58.348 +02:00 [DBG] Loaded hosting startup assembly Microsoft.AspNetCore.Watch.BrowserRefresh
+2024-12-21 22:20:58.348 +02:00 [DBG] Loaded hosting startup assembly Microsoft.WebTools.BrowserLink.Net
+2024-12-21 22:20:58.350 +02:00 [INF] Application started. Press Ctrl+C to shut down.
+2024-12-21 22:20:58.351 +02:00 [INF] Hosting environment: Development
+2024-12-21 22:20:58.351 +02:00 [INF] Content root path: C:\Users\USER\Desktop\אסתי עבודה\ש.ל.ה - כללית\EmployeeManagement\EmployeeManagement
+2024-12-21 22:20:58.351 +02:00 [DBG] Hosting started
+2024-12-21 22:20:58.648 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/swagger/index.html - -
+2024-12-21 22:20:58.971 +02:00 [DBG] Wildcard detected, all requests with hosts will be allowed.
+2024-12-21 22:21:01.104 +02:00 [DBG] Response markup is scheduled to include browser refresh script injection.
+2024-12-21 22:21:05.085 +02:00 [DBG] Response markup was updated to include browser refresh script injection.
+2024-12-21 22:21:05.587 +02:00 [DBG] Connection ID "17942340917054668809" disconnecting.
+2024-12-21 22:21:05.599 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/swagger/index.html - - - 200 - text/html;charset=utf-8 6957.5195ms
+2024-12-21 22:21:10.150 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/_framework/aspnetcore-browser-refresh.js - -
+2024-12-21 22:21:10.158 +02:00 [DBG] Connection ID "18230571297501347957" disconnecting.
+2024-12-21 22:21:10.161 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 8.1171ms
+2024-12-21 22:21:15.395 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/swagger/v1/swagger.json - -
+2024-12-21 22:21:15.935 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/swagger/v1/swagger.json - - - 200 - application/json;charset=utf-8 539.9629ms
+2024-12-21 23:16:53.641 +02:00 [INF] Request starting HTTP/2 GET https://localhost:44356/_framework/aspnetcore-browser-refresh.js - -
+2024-12-21 23:16:54.516 +02:00 [INF] Request finished HTTP/2 GET https://localhost:44356/_framework/aspnetcore-browser-refresh.js - - - 200 12030 application/javascript;+charset=utf-8 914.0725ms

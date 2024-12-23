@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "D/nOXvv5XJCMd03uWAbjNz8EUAGReDXQSJ2I3VrX4C4=",
+  "Source": "EmployeeManagement.Application",
+  "BasePath": "_content/EmployeeManagement.Application",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
